@@ -1,0 +1,176 @@
+<html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Sorting Visualizer</title>
+            <link rel="stylesheet" href="./css/style.css">
+        </head>
+    <body>
+        <header>
+            <nav>
+                <div class="array-inputs">
+                    <p>Size of arary</p>
+                    <input id="a_size" type="range" min=5 max=250 step=5 value=80>
+                    <p>Speed of algorithm:</p>
+                    <input id="a_speed" type="range" min=1 max=10 step=1 value=3>
+                    <button id="a_generate">Generate new array!</button>
+                </div>
+                
+
+                <div class="header_right">
+                    <p class="nav_heading">Sorting visualizer</p>
+
+
+                    <div class="algos">
+                        <button onclick="speakText1()">Bubble</button>
+                        <!--input onclick="speakText1()" type="button" value="Bubble"-->                
+                        <button onclick="speakText2()">Selection</button>
+                        <button onclick="speakText4()">Insertion</button>
+                        <button onclick="speakText3()">Merge</button>
+                        <button onclick="speakText5()">Quick</button>
+                        <button onclick="speakText6()">Heap</button>
+                        <button>Rev_B</button>
+                        <button>Rev_S</button>
+                        <button>Rev_I</button>
+                        <button>Rev_M</button>
+                        <button>Rev_Q</button>
+                        <button>Rev_H</button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--script type="text/javascript" src="https://code.responsivevoice.org/responsivevoice.js"></script>
+        <textarea id="txt" rows="10" cols="10" name="text"></textarea>
+        <input type="button" onclick="textSpeak()" value="submit">
+
+
+        <script>
+            function textSpeak()
+            {
+                var text=document.getElementById(txt);
+                responsivevoice.speak(text);
+            }
+        </script-->
+        <section>            
+              
+            <div id="Info_cont1">
+                    
+                    
+                    <button>
+                        <p>For more information CLICK</p>
+                    <a href="https://www.geeksforgeeks.org/bubble-sort/">Bubble</a>
+                    <a href="https://www.geeksforgeeks.org/selection-sort/">Selection</a>
+                    <a href="https://www.geeksforgeeks.org/merge-sort/">Merge</a>
+                    <a href="https://www.geeksforgeeks.org/insertion-sort/">Insertion</a>
+                    <a href="https://www.geeksforgeeks.org/quick-sort/">Quick</a>
+                    <a href="https://www.geeksforgeeks.org/heap-sort/">Heap</a>
+                     </button>
+                    <p>LEGEND</p>LEGEND</p>              
+                    <button style="background-color:blue;text-align:center">unsorted element</button>
+                    <button style="background-color:red;text-align:center">Selection and comparision</button> 
+                    <button style="background-color:yellow;text-align:center">selection of elements</button> 
+                    <button style="background-color:green;text-align:center">intermediate sorted element</button> 
+                </div>
+            </div>
+            <div id="array_container"></div>
+            <div id="Info_Cont2">
+
+                <script type="text/javascript" src="https://code.responsivevoice.org/responsivevoice.js"></script>
+
+                <!--p>Text to Speech Converter</p-->
+
+                <textarea id="txt1" cols="10" rows="10" style="display: none;" >
+                    Bubble sort 
+                    Bubble Sort is based on the idea of repeatedly comparing pairs of adjacent elements and then swapping their positions if they exist in the wrong order.Large values are always sorted first.
+                    It only takes one iteration to detect that a collection is already sorted.
+                    The best time complexity for Bubble Sort is Big O of n .The average and worst time complexity is Big O of n square.
+                    The space complexity for Bubble Sort is Big O of 1, because only single additional memory space is required.
+
+                </textarea>
+                <!--input onclick="speakText1()" type="button" value="Bubble"-->
+                
+                <textarea id="txt2" cols="10" rows="10" style="display: none;" >
+                    Selection sort is a sorting algorithm that selects the smallest element from an unsorted list in each iteration, and places that element at the beginning of the unsorted list.The time complexity of the selection sort is the same in all cases.It is Big O of n square.
+                    At every step, you have to find the minimum element and put it in the right place. The minimum element is not known until the end of the array is not reached.
+                    Space complexity is Big O of 1 .  
+    
+
+                </textarea>
+                <!--input onclick="speakText2()" type="button" value="Selection"-->
+               
+                <textarea id="txt3" cols="10" rows="10" style="display: none;" >
+                    Merge sort is one of the most efficient sorting algorithms. It works on the principle of Divide and Conquer. Merge sort repeatedly breaks down a list into several sublists until each sublist consists of a single element and merging those sublists in a manner that results into a sorted list.
+                    merge sort has an average and worst-case performance of Big O of n log n.
+                    Space complexity of merge sort is Big O of n.
+                    
+
+                </textarea>
+                <!--input onclick="speakText3()" type="button" value="Merge"-->
+
+                
+                <textarea id="txt4" cols="10" rows="10" style="display: none;" >
+                    In insertion sort, the array is virtually split into a sorted and an unsorted part. Values from the unsorted part are picked and placed at the correct position in the sorted part. Always the first element in the array is assumed to be sorted. Take the second element and store it separately in key.
+                    Compare key with the first element. If the first element is greater than key, then key is placed in front of the first element.This continues until we get a complete sorted list.
+                    Worst Case and average case time Complexity is Big O of n square.
+                    Best case time complexity is Big O of n.
+                    Space complexity is Big O of 1.
+
+
+                </textarea>
+                <!--input onclick="speakText4()" type="button" value="Insertion"-->
+
+
+                <textarea id="txt5" cols="10" rows="10" style="display: none;" >
+                    Quick sort is a divide and conquer algorithm. It divides the list into smaller sub lists and follows the path of recursion to sort them individually. The basic principle in quick sort is the concept of a mean value or middle value in the whole of list. This middle value is known as a Pivot.
+                    The idea is to select a middle value or a pivot from the list. Move smaller values than the pivot to its left and larger values to its right. So there would be two lists. One consists of all the values smaller than the pivot. Second consists of all the values equal to and greater to the pivot. Pivot serves as the boundary between these two parts. 
+                    The running time of Quick Sort is Big O of n logn.
+                    The space complexity is calculated based on the space used in the recursion stack. The worst case space used will be O(n) . The average case space used will be of the order O(log n). 
+                </textarea>
+                <!--input onclick="speakText5()" type="button" value="Quick"-->
+
+                <textarea id="txt6" cols="10" rows="10" style="display: none;" >
+                    Heap sort
+                    In heap sort the largest item is stored at the root node.
+                    We need to remove the root element and put at the end of the array (n th position) Put the last item of the tree (heap) at the vacant place.
+                     Reduce the size of the heap by 1.
+                     Heapify the root element again so that we have the highest element at root.
+                    The process is repeated until all the items of the list are sorted.
+                    Time complexity is Big O of n log n.
+                    Space complexity is Big O of 1.  
+                </textarea>
+                <!--input onclick="speakText6()" type="button" value="Heap"-->
+
+                <p>Efficiency</p>
+            </div>
+        </section>
+        <footer>
+
+        </footer>
+
+        
+        <!--script>
+            function speakText(){
+                var text = document.getElementById('txt').value;
+                responsiveVoice.speak(text);
+                
+            }
+        </script-->
+
+        <script src="./scripts/main.js"></script>
+        <script src="./scripts/visualization.js"></script>
+        <script src="./scripts/bubble/bubble_sort.js"></script>
+        <script src="./scripts/bubble/bubble_sort_rev.js"></script>
+        <script src="./scripts/merge/merge_sort.js"></script>
+        <script src="./scripts/merge/merge_sort_rev.js"></script>
+        <script src="./scripts/selection/selection_sort.js"></script>
+        <script src="./scripts/selection/selection_sort_rev.js"></script>
+        <script src="./scripts/insertion/insertion_sort.js"></script>
+        <script src="./scripts/insertion/insertion_rev.js"></script>
+        <script src="./scripts/quick/quick_sort.js"></script>
+        <script src="./scripts/quick/quick_sort_rev.js"></script>
+        <script src="./scripts/heap/heap_sort.js"></script>
+        <script src="./scripts/heap/heap_rev.js"></script>
+    </body>
+</html>
